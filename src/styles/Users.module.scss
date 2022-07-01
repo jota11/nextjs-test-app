@@ -1,0 +1,159 @@
+@import "variables";
+
+@media (max-width: 900px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
+.card {
+    background-color: $black2;
+    margin: 1vh auto;
+    padding: 2vh;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.3s;
+    color: $white;
+
+    &:hover {
+        background-color: #222;
+        color: $white;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .info {
+        margin-right: 2vh;
+        width: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        img {
+            width: 90%;
+            margin-bottom: 1vh;
+            border-radius: 100%;
+        }
+        
+        .joindate {
+            font-size: 1vh;
+            font-weight: 300;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-size: 30px;
+            font-family: $defaultFontStack;
+            font-weight: 500;
+            line-height: 100%;
+        }
+
+        .username {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+#profile {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    #banner {
+        background: linear-gradient(90deg, #FF69FF 50%, #6969FF 100%);
+        background-color: #333;
+        background-blend-mode: multiply;
+        width: inherit;
+        padding: 5vh 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        #user_info_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+
+            h1, h2, p {
+                margin: 0;
+            }
+
+            h1 {
+                font-weight: 900;
+                font-size: 5vh;
+            }
+
+            h2 {
+                font-weight: 300;
+                font-size: 2.3vh;
+            }
+            
+            p {
+                font-weight: 100;
+                font-size: 2vh;
+            }
+
+            img {
+                width: 20vh;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    #main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        #friends {
+            background-color: $black2;
+            width: 30%;
+            border-right: 1px solid #333;
+
+            .friend {
+                background-color: #333;
+                padding: 1vh;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #222;
+                transition: 0.2s;
+                
+                img {
+                    width: 5vh;
+                    margin-right: 1vh;
+                    border-radius: 100%
+                }
+
+                span {
+                    font-size: 2.5vh;
+                }
+
+                &:hover {
+                    background-color: #222;
+                }
+            }
+        }
+
+        #posts {
+            width: 100%;
+        }
+    }
+}

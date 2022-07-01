@@ -1,0 +1,36 @@
+@import "variables";
+
+.post {
+    background-color: $white2;
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $black2;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 5vh;
+    }
+
+    .date {
+        font-size: 2vh;
+        line-height: 100%;
+        opacity: 0.5;
+
+        &:before {
+            content: "@ "
+        }
+    }
+
+    p {
+        font-size: 1em;
+        margin: 0;
+    }
+}

@@ -1,0 +1,50 @@
+@import "variables";
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin: 3vh 0;
+    font-size: 8vh;
+    font-family: $defaultFontStack;
+}
+
+.tests {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+
+    .item {
+        * {
+            margin: 0;
+        }
+
+        background-color: $black;
+        margin: 1vh auto;
+        padding: 2vh;
+        width: 100%;
+        color: $white;
+        text-align: center;
+        flex-direction: column;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $black2;
+            color: $white;
+        }
+
+        p {
+            font-size: 5vh;
+            font-weight: 500;
+        }
+        
+        span {
+            font-size: 2.5vh;
+            font-weight: 300;
+        }
+    }
+}
